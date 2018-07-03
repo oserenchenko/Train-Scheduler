@@ -38,4 +38,38 @@
     var trainDest = childSnapshot.val().destination;
     var trainFirstTime = childSnapshot.val().firstTime;
     var trainFreq = childSnapshot.val().frequency;
+
+    var timeNow = moment();
+    moment(timeNow).format('HH:mm');
+    console.log(timeNow);
+
+    var trainTime = moment(trainFirstTime, 'HH:mm').subtract(1, 'years');
+    console.log(trainTime);
+
+    var timeDiff = (moment(timeNow).diff((trainTime), "minutes"));
+    console.log(timeDiff);
+
+    var remainder = timeDiff % trainFreq;
+    console.log(remainder);
+
+    var minAway = trainFreq - remainder;
+    console.log(minAway);
+
+    var nextArrival = moment(moment(), 'hh:mm').add(minAway, 'minutes');
+    var nextArrivalTime = moment(nextArrival).format("hh:mm:ss a")
+    console.log(nextArrival);
+
+    var newRow = $('<tr>');
+    newRow.append(
+      $("<td>").text(trainName),
+      $("<td>").text(trainDest),
+      $("<td>").text(trainFreq),
+      $("<td>").text(nextArrivalTime),
+      $("<td>").text(minAway)
+    );
+
+    $('tbody').append(newRow);
+
   })
+
+
