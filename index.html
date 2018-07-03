@@ -9,17 +9,77 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <title>RPS Multiplayer</title>
+  <title>Train Scheduler</title>
 </head>
 
 <body>
+  <div class="jumbotron">
+    <h1>Catch a Train</h1>
+    <h3>Train Scheduler</h3>
+  </div>
+  <div class="container">
+    <div class="contentContainer">
+      <h4 class="containerHeader">Current Train Schedule</h4>
+      <div class="row">
+        <div class="col-sm-12">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="contentContainer mt-5">
+      <h4 class="containerHeader">Add Train</h4>
+      <div class="row">
+        <div class="col-sm-12">
+          <form>
+            <label>Train Name</label>
+            <input type="text">
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <form>
+            <label>Destination</label>
+            <input type="text">
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <form>
+            <label>First Train Time (HH:mm - Military Time)</label>
+            <input type="text">
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <form>
+            <label>Frequency (min)</label>
+            <input type="text">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-<!-- script links -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-<script src="assets/javascript/logic.js"></script>
+  <!-- script links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script src="assets/javascript/logic.js"></script>
 </body>
 
 </html>
