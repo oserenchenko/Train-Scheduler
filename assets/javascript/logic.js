@@ -56,7 +56,7 @@
     console.log(minAway);
 
     var nextArrival = moment(moment(), 'hh:mm').add(minAway, 'minutes');
-    var nextArrivalTime = moment(nextArrival).format("hh:mm:ss a")
+    var nextArrivalTime = moment(nextArrival).format("hh:mm a")
     console.log(nextArrival);
 
     var newRow = $('<tr>');

@@ -1,18 +1,19 @@
 .jumbotron {
   text-align: center;
-  height: 150px;
-  padding-top: 15px;
+  height: 120px;
+  padding: 10px;
 }
 
 .contentContainer {
   border: 2px solid black;
   padding: 20px;
   padding-top: 0px;
+  margin-bottom: 30px;
 }
 
 .containerHeader {
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 th {
