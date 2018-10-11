@@ -7,7 +7,7 @@ ______________
 ## Visit the deployed version of Train-Scheduler
 [Train-Scheduler](https://oserenchenko.github.io/Train-Scheduler/)
 
-![homepage]()
+![homepage](train_scheduler.png)
 
 ______________
 ______________
